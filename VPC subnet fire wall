@@ -12,7 +12,7 @@ resource "google_compute_network" "custom-vpc-tf" {
 resource "google_compute_subnetwork" "sub-sg" {
  name = "sub-sg"
  network = google_compute_network.custom-vpc-tf.id
- ip_cidip_cidr_range =  "10.1.0.0/24"
+ ip_cidr_range =  "10.1.0.0/24"
  region = "us-central1"
  private_ip_google_access = true
 }
